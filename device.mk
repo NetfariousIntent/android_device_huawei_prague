@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
+# Ramdisk C432B161 P8 Lite 2017
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,device/huawei/prague/rootdir/,root/)
+
 # USB
 PRODUCT_PACKAGES += \
     	com.android.future.usb.accessory
