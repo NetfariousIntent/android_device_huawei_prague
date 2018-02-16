@@ -35,6 +35,16 @@ PRODUCT_COPY_FILES += \
 # Dalvik
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+# Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/huawei/prague/Image
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    	$(LOCAL_KERNEL):kernel
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
