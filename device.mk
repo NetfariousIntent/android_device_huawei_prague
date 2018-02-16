@@ -81,6 +81,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,device/huawei/prague/rootdir/,root/)
 
+# Project Treble
+$(call inherit-product-if-exists, device/huawei/prague/treble.mk)
+
 # USB
 PRODUCT_PACKAGES += \
     	com.android.future.usb.accessory
