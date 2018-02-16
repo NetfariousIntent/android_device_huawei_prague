@@ -6,6 +6,7 @@
 /dev/block/bootdevice/by-name/vendor    /vendor    ext4    ro,barrier=1    wait,verify
 /dev/block/bootdevice/by-name/product    /product    ext4    ro,barrier=1    wait,verify
 /dev/block/bootdevice/by-name/version   /version   ext4    ro,barrier=1    wait,verify
+/dev/block/bootdevice/by-name/boot      /boot      emmc	   defaults        defaults
 /dev/block/bootdevice/by-name/cust    /cust    ext4    ro,barrier=1    wait,verify
 /dev/block/bootdevice/by-name/patch     /patch_hw  ext4             ro    wait,verify
 /devices/hi_mci.1/mmc_host/mmc1/*                       auto                auto      defaults                                      voldmanaged=sdcard:auto,noemulatedsd
